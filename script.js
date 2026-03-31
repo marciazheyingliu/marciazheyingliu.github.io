@@ -54,7 +54,7 @@ btn.onclick = ()=>{
   playing = !playing;
 };
 
-// 代码雨 —— 一定动
+// 代码雨
 const canvas = document.getElementById('codeRain');
 if (canvas) {
   const ctx = canvas.getContext('2d');
