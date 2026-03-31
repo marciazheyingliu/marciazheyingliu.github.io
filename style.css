@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+:root {
+  --s-green: #1a936f;
+  --s-light: #88d8b0;
+  --bg-dark: #051a12;
+  --card: #0f2e1e;
+  --text: #e0f5e9;
+  --gray: #88a896;
+}
+body {
+  background: var(--bg-dark);
+  color: var(--text);
+}
+.navbar {
+  background: rgba(10, 42, 30, 0.9);
+  padding: 16px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.navbar a {
+  color: var(--s-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 42px;
+  color: var(--s-light);
+  margin-bottom: 12px;
+}
+.hero h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.section-title {
+  text-align: center;
+  color: var(--s-light);
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+.about-box {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 12px;
+  border-left: 4px solid var(--s-light);
+  line-height: 1.9;
+}
+.timeline, .project-box {
+  margin-bottom: 20px;
+}
+.t-card, .project-box {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--s-light);
+}
+.blog-card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--s-light);
+}
+.blog-card h3 {
+  color: var(--s-light);
+  margin-bottom: 6px;
+}
+.date {
+  color: var(--gray);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.btn-download {
+  background: var(--s-green);
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+.music-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  background: rgba(15, 46, 30, 0.9);
+  border: 1px solid var(--s-light);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--s-light);
+  cursor: pointer;
+  z-index: 999;
+}
