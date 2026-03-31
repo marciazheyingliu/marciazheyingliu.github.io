@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<canvas id="codeRain"></canvas>
+
 <div class="music-btn" id="musicToggle">
   <i class="fa-solid fa-music"></i>
 </div>
@@ -16,35 +19,42 @@
 <div class="info-bar">
   <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
   <div class="weather">
-    <span id="weather-sh"><i class="fa-solid fa-cloud"></i> Shanghai...</span>
-    <span id="weather-hk"><i class="fa-solid fa-cloud"></i> Hong Kong...</span>
+    <span id="weather-sh">Shanghai</span>
+    <span id="weather-hk">Hong Kong</span>
   </div>
 </div>
 
 <div class="lang-switch">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('zh')">中文</button>
-  <button onclick="setLang('tw')">繁中</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh')">中</button>
+  <button onclick="setLang('tw')">繁</button>
 </div>
 
 <nav class="navbar">
-  <a href="index.html"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html"><i class="fa-solid fa-user-secret"></i></a>
-  <a href="experience.html"><i class="fa-solid fa-briefcase"></i></a>
-  <a href="projects.html"><i class="fa-solid fa-code"></i></a>
-  <a href="blog.html"><i class="fa-solid fa-terminal"></i></a>
-  <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+  <a href="index.html" data-i18n="nav.home"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html" data-i18n="nav.about"><i class="fa-solid fa-user-secret"></i></a>
+  <a href="experience.html" data-i18n="nav.exp"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="projects.html" data-i18n="nav.proj"><i class="fa-solid fa-code"></i></a>
+  <a href="blog.html" data-i18n="nav.blog"><i class="fa-solid fa-terminal"></i></a>
+  <a href="contact.html" data-i18n="nav.contact"><i class="fa-solid fa-envelope"></i></a>
 </nav>
 
 <div class="container">
   <h2 class="section-title" data-i18n="proj.title">Projects</h2>
-  <div class="project-box">
-    <h3><i class="fa-solid fa-chart-line"></i> <span data-i18n="proj.hejun">Hejun Consulting</span></h3>
-    <p data-i18n="proj.hejun.desc">Cost optimization & revenue impact analysis.</p>
+
+  <div class="card">
+    <h3>Electricity Access & HDI Analysis (Africa)</h3>
+    <p>Built DID & regression models to analyze the impact of power access on human development across African countries.</p>
   </div>
-  <div class="project-box">
-    <h3><i class="fa-solid fa-chart-pie"></i> <span data-i18n="proj.bda">BDA Consulting</span></h3>
-    <p data-i18n="proj.bda.desc">SKU analysis & subsidy strategy optimization.</p>
+
+  <div class="card">
+    <h3>Financial Modeling & Valuation Project</h3>
+    <p>Constructed 3-statement model, comparable company analysis and DCF valuation for a listed firm.</p>
+  </div>
+
+  <div class="card">
+    <h3>Audit Data Automation Project</h3>
+    <p>Used Python to automate aging analysis, risk identification and report generation for audit procedures.</p>
   </div>
 </div>
 
