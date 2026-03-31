@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>项目经历 | 刘哲瑛</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Zheying Liu</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css">
 </head>
 <body>
 
+<div class="music-btn" id="musicToggle">
+  <i class="fa-solid fa-music"></i>
+</div>
+
+<div class="info-bar">
+  <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
+  <div class="weather">
+    <span id="weather-sh"><i class="fa-solid fa-cloud"></i> Shanghai...</span>
+    <span id="weather-hk"><i class="fa-solid fa-cloud"></i> Hong Kong...</span>
+  </div>
+</div>
+
+<div class="lang-switch">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('zh')">中文</button>
+  <button onclick="setLang('tw')">繁中</button>
+</div>
+
 <nav class="navbar">
-    <a href="home.html">首页</a>
-    <a href="about.html">关于我</a>
-    <a href="experience.html">经历</a>
-    <a href="projects.html">项目</a>
-    <a href="blog.html">Marcia 小天地</a>
-    <a href="resume.html">简历</a>
+  <a href="index.html"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html"><i class="fa-solid fa-user-secret"></i></a>
+  <a href="experience.html"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="projects.html"><i class="fa-solid fa-code"></i></a>
+  <a href="blog.html"><i class="fa-solid fa-terminal"></i></a>
+  <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
 </nav>
 
 <div class="container">
-    <h2 class="section-title">项目经历 | 刘哲瑛</h2>
-    <div class="project-box">
-        <h3>和君咨询｜产能出海项目</h3>
-        <p>东南亚成本优化 25%，助力 800 万美元收入增长</p>
-    </div>
-    <div class="project-box">
-        <h3>BDA 咨询｜电商数据分析</h3>
-        <p>3000+ SKU 分析，优化 200 万美元补贴策略</p>
-    </div>
-    <div class="project-box">
-        <h3>ESG 数据自动化项目</h3>
-        <p>效率提升 40%，千万级投资组合风控</p>
-    </div>
+  <h2 class="section-title" data-i18n="proj.title">Projects</h2>
+  <div class="project-box">
+    <h3><i class="fa-solid fa-chart-line"></i> <span data-i18n="proj.hejun">Hejun Consulting</span></h3>
+    <p data-i18n="proj.hejun.desc">Cost optimization & revenue impact analysis.</p>
+  </div>
+  <div class="project-box">
+    <h3><i class="fa-solid fa-chart-pie"></i> <span data-i18n="proj.bda">BDA Consulting</span></h3>
+    <p data-i18n="proj.bda.desc">SKU analysis & subsidy strategy optimization.</p>
+  </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
