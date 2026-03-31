@@ -12,6 +12,10 @@
 <div class="bg-grid"></div>
 <canvas id="codeRain"></canvas>
 
+<audio id="bgm" loop>
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/FreezeTank/Atmospheric_Drama/FreezeTank_-_01_-_Digital_Shadows.mp3" type="audio/mpeg">
+
+
 <div class="music-btn" id="musicToggle">
   <i class="fa-solid fa-music"></i>
 </div>
@@ -19,8 +23,8 @@
 <div class="info-bar">
   <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
   <div class="weather">
-    <span id="weather-sh">Shanghai</span>
-    <span id="weather-hk">Hong Kong</span>
+    <span id="weather-sh">22°C</span>
+    <span id="weather-hk">25°C</span>
   </div>
 </div>
 
@@ -31,27 +35,24 @@
 </div>
 
 <nav class="navbar">
-  <a href="index.html" data-i18n="nav.home"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html" data-i18n="nav.about"><i class="fa-solid fa-user-secret"></i></a>
-  <a href="experience.html" data-i18n="nav.exp"><i class="fa-solid fa-briefcase"></i></a>
-  <a href="projects.html" data-i18n="nav.proj"><i class="fa-solid fa-code"></i></a>
-  <a href="blog.html" data-i18n="nav.blog"><i class="fa-solid fa-terminal"></i></a>
-  <a href="contact.html" data-i18n="nav.contact"><i class="fa-solid fa-envelope"></i></a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Projects</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-  <h2 class="section-title" data-i18n="proj.title">Projects</h2>
-
+  <h2 class="section-title">Projects</h2>
   <div class="card">
     <h3>Electricity Access & HDI Analysis (Africa)</h3>
     <p>Built DID & regression models to analyze the impact of power access on human development across African countries.</p>
   </div>
-
   <div class="card">
     <h3>Financial Modeling & Valuation Project</h3>
     <p>Constructed 3-statement model, comparable company analysis and DCF valuation for a listed firm.</p>
   </div>
-
   <div class="card">
     <h3>Audit Data Automation Project</h3>
     <p>Used Python to automate aging analysis, risk identification and report generation for audit procedures.</p>
