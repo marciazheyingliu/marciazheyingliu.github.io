@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<canvas id="codeRain"></canvas>
+
 <div class="music-btn" id="musicToggle">
   <i class="fa-solid fa-music"></i>
 </div>
@@ -16,37 +19,37 @@
 <div class="info-bar">
   <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
   <div class="weather">
-    <span id="weather-sh"><i class="fa-solid fa-cloud"></i> Shanghai...</span>
-    <span id="weather-hk"><i class="fa-solid fa-cloud"></i> Hong Kong...</span>
+    <span id="weather-sh">Shanghai</span>
+    <span id="weather-hk">Hong Kong</span>
   </div>
 </div>
 
 <div class="lang-switch">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('zh')">中文</button>
-  <button onclick="setLang('tw')">繁中</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh')">中</button>
+  <button onclick="setLang('tw')">繁</button>
 </div>
 
 <nav class="navbar">
-  <a href="index.html"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html"><i class="fa-solid fa-user-secret"></i></a>
-  <a href="experience.html"><i class="fa-solid fa-briefcase"></i></a>
-  <a href="projects.html"><i class="fa-solid fa-code"></i></a>
-  <a href="blog.html"><i class="fa-solid fa-terminal"></i></a>
-  <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+  <a href="index.html" data-i18n="nav.home"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html" data-i18n="nav.about"><i class="fa-solid fa-user-secret"></i></a>
+  <a href="experience.html" data-i18n="nav.exp"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="projects.html" data-i18n="nav.proj"><i class="fa-solid fa-code"></i></a>
+  <a href="blog.html" data-i18n="nav.blog"><i class="fa-solid fa-terminal"></i></a>
+  <a href="contact.html" data-i18n="nav.contact"><i class="fa-solid fa-envelope"></i></a>
 </nav>
 
 <div class="container">
-  <h2 class="section-title" data-i18n="blog.title">Marcia's Blog</h2>
-  <div class="blog-card">
-    <h3><i class="fa-solid fa-book"></i> <span data-i18n="blog.n1">Reading Notes</span></h3>
-    <p class="date">2026-03-31</p>
-    <p data-i18n="blog.d1">Sharing insights on investment, negotiation and history.</p>
+  <h2 class="section-title" data-i18n="blog.title">Blog</h2>
+
+  <div class="card">
+    <h3>Investment Research Notes</h3>
+    <p>Sharing insights on finance, markets and emerging economies.</p>
   </div>
-  <div class="blog-card">
-    <h3><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="blog.n2">Investment Thoughts</span></h3>
-    <p class="date">2026-03-31</p>
-    <p data-i18n="blog.d2">Personal views on market logic and industry trends.</p>
+
+  <div class="card">
+    <h3>Data & Modeling Projects</h3>
+    <p>Walkthrough of Python, econometrics and automation work.</p>
   </div>
 </div>
 
