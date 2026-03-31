@@ -3,58 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog | Zheying Liu</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css">
+<title>Blog | Miss Liu</title>
+<style>
+  * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,sans-serif;}
+  body {background:#105f41;color:#e6f7ef;padding:2rem;line-height:1.6;}
+  .time-bar {position:fixed;top:10px;left:20px;color:#1effaa;font-size:0.9rem;}
+  .lang-switch {position:fixed;top:10px;right:20px;display:flex;gap:0.6rem;}
+  .lang-switch button {background:rgba(255,255,255,0.1);color:#e6f7ef;border:1px solid #1effaa;border-radius:6px;padding:0.3rem 0.7rem;font-size:0.9rem;cursor:pointer;}
+  .navbar {display:flex;gap:1.2rem;justify-content:center;margin:2rem 0;flex-wrap:wrap;}
+  .navbar a {color:#1effaa;text-decoration:none;font-weight:500;}
+  .container {max-width:720px;margin:0 auto;}
+  .section-title {text-align:center;font-size:1.8rem;margin-bottom:2rem;}
+  .card {background:rgba(12,60,44,0.6);border-left:3px solid #1effaa;padding:1.4rem;border-radius:10px;margin-bottom:1.2rem;}
+  .card h3 {color:#fff;margin-bottom:0.5rem;}
+  .footer {text-align:center;margin-top:3rem;color:#1effaa;font-style:italic;}
+</style>
 </head>
 <body>
 
-<div class="bg-grid"></div>
-<canvas id="codeRain"></canvas>
-
-<audio id="bgm" loop>
-  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/FreezeTank/Atmospheric_Drama/FreezeTank_-_01_-_Digital_Shadows.mp3" type="audio/mpeg">
-
-
-<div class="music-btn" id="musicToggle">
-  <i class="fa-solid fa-music"></i>
-</div>
-
-<div class="info-bar">
-  <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
-  <div class="weather">
-    <span id="weather-sh">22°C</span>
-    <span id="weather-hk">25°C</span>
-  </div>
-</div>
-
+<div class="time-bar" id="clock">Loading...</div>
 <div class="lang-switch">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('zh')">中</button>
-  <button onclick="setLang('tw')">繁</button>
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('zh')">中文</button>
+  <button onclick="setLang('tw')">繁體</button>
 </div>
 
-<nav class="navbar">
+<div class="navbar">
   <a href="index.html">Home</a>
-  <a href="about.html">About</a>
   <a href="experience.html">Experience</a>
   <a href="projects.html">Projects</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
-</nav>
+</div>
 
 <div class="container">
-  <h2 class="section-title">Blog</h2>
+  <h2 class="section-title">Blog & Insights</h2>
   <div class="card">
     <h3>Investment Research Notes</h3>
-    <p>Sharing insights on finance, markets and emerging economies.</p>
+    <p>Sharing thoughts on markets, modeling, and due diligence.</p>
   </div>
   <div class="card">
-    <h3>Data & Modeling Projects</h3>
-    <p>Walkthrough of Python, econometrics and automation work.</p>
+    <h3>Data & Valuation Insights</h3>
+    <p>DCF, comps, LBO, and quantitative analysis.</p>
   </div>
 </div>
 
-<script src="script.js"></script>
+<div class="footer">Je veux la gloire à mes genoux.</div>
+
+<script>
+setInterval(()=>{const d=new Date();const h=String(d.getHours()).padStart(2,'0');const m=String(d.getMinutes()).padStart(2,'0');const s=String(d.getSeconds()).padStart(2,'0');document.getElementById('clock').innerText=`${h}:${m}:${s}`},1000);
+function setLang(l){localStorage.setItem('lang',l);window.location.reload();}
+</script>
 </body>
 </html>
