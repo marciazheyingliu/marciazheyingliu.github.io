@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<canvas id="codeRain"></canvas>
+
 <div class="music-btn" id="musicToggle">
   <i class="fa-solid fa-music"></i>
 </div>
@@ -16,35 +19,45 @@
 <div class="info-bar">
   <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
   <div class="weather">
-    <span id="weather-sh"><i class="fa-solid fa-cloud"></i> Shanghai...</span>
-    <span id="weather-hk"><i class="fa-solid fa-cloud"></i> Hong Kong...</span>
+    <span id="weather-sh">Shanghai</span>
+    <span id="weather-hk">Hong Kong</span>
   </div>
 </div>
 
 <div class="lang-switch">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('zh')">中文</button>
-  <button onclick="setLang('tw')">繁中</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh')">中</button>
+  <button onclick="setLang('tw')">繁</button>
 </div>
 
 <nav class="navbar">
-  <a href="index.html"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html"><i class="fa-solid fa-user-secret"></i></a>
-  <a href="experience.html"><i class="fa-solid fa-briefcase"></i></a>
-  <a href="projects.html"><i class="fa-solid fa-code"></i></a>
-  <a href="blog.html"><i class="fa-solid fa-terminal"></i></a>
-  <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+  <a href="index.html" data-i18n="nav.home"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html" data-i18n="nav.about"><i class="fa-solid fa-user-secret"></i></a>
+  <a href="experience.html" data-i18n="nav.exp"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="projects.html" data-i18n="nav.proj"><i class="fa-solid fa-code"></i></a>
+  <a href="blog.html" data-i18n="nav.blog"><i class="fa-solid fa-terminal"></i></a>
+  <a href="contact.html" data-i18n="nav.contact"><i class="fa-solid fa-envelope"></i></a>
 </nav>
 
 <div class="container">
   <h2 class="section-title" data-i18n="exp.title">Experience</h2>
-  <div class="t-card">
-    <h3><i class="fa-solid fa-building-columns"></i> <span data-i18n="exp.ft">Franklin Templeton | EME Research Intern</span></h3>
-    <p data-i18n="exp.ft.desc">Built forecasting models, analyzed industry trends.</p>
+
+  <div class="card">
+    <div class="time">Jun 2025 – Aug 2025</div>
+    <h3>Franklin Templeton – EME Research Intern</h3>
+    <p>Conducted emerging market research, monitored macro indicators, supported investment reports and data analysis.</p>
   </div>
-  <div class="t-card">
-    <h3><i class="fa-solid fa-building-columns"></i> <span data-i18n="exp.citic">CITIC Capital | Buyout Intern</span></h3>
-    <p data-i18n="exp.citic.desc">Industry research, target screening, investor reports.</p>
+
+  <div class="card">
+    <div class="time">Dec 2024 – Feb 2025</div>
+    <h3>CITIC Capital – Buyout Intern</h3>
+    <p>Assisted in financial modeling, due diligence, target screening and private equity memo drafting.</p>
+  </div>
+
+  <div class="card">
+    <div class="time">Jul 2024 – Sep 2024</div>
+    <h3>Hejun Consulting – Consulting Intern</h3>
+    <p>Supported cost optimization projects, industry analysis and client strategy recommendations.</p>
   </div>
 </div>
 
