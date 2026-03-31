@@ -9,9 +9,12 @@
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<canvas id="codeRain"></canvas>
+
 <audio id="bgm" loop>
   <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/FreezeTank/Atmospheric_Drama/FreezeTank_-_01_-_Digital_Shadows.mp3" type="audio/mpeg">
-</audio>
+
 
 <div class="music-btn" id="musicToggle">
   <i class="fa-solid fa-music"></i>
@@ -20,29 +23,29 @@
 <div class="info-bar">
   <div id="real-time"><i class="fa-solid fa-clock"></i> Loading...</div>
   <div class="weather">
-    <span id="weather-sh"><i class="fa-solid fa-cloud"></i> Shanghai...</span>
-    <span id="weather-hk"><i class="fa-solid fa-cloud"></i> Hong Kong...</span>
+    <span id="weather-sh">Shanghai</span>
+    <span id="weather-hk">Hong Kong</span>
   </div>
 </div>
 
 <div class="lang-switch">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('zh')">中文</button>
-  <button onclick="setLang('tw')">繁中</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh')">中</button>
+  <button onclick="setLang('tw')">繁</button>
 </div>
 
 <nav class="navbar">
-  <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-  <a href="about.html"><i class="fa-solid fa-user-secret"></i> About</a>
-  <a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a>
-  <a href="projects.html"><i class="fa-solid fa-code"></i> Projects</a>
-  <a href="blog.html"><i class="fa-solid fa-terminal"></i> Blog</a>
-  <a href="resume.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <a href="index.html" data-i18n="nav.home"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html" data-i18n="nav.about"><i class="fa-solid fa-user-secret"></i></a>
+  <a href="experience.html" data-i18n="nav.exp"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="projects.html" data-i18n="nav.proj"><i class="fa-solid fa-code"></i></a>
+  <a href="blog.html" data-i18n="nav.blog"><i class="fa-solid fa-terminal"></i></a>
+  <a href="contact.html" data-i18n="nav.contact"><i class="fa-solid fa-envelope"></i></a>
 </nav>
 
 <div class="container hero">
   <h1 id="name-text">Zheying Liu</h1>
-  <p class="subtitle">Front Office Financial Analyst | Investment Research | HKU</p>
+  <p class="subtitle" data-i18n="home.subtitle">Front Office Financial Analyst | Investment Research</p>
 </div>
 
 <script src="script.js"></script>
